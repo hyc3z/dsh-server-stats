@@ -1,0 +1,13 @@
+- insert:
+    - id: server-stats
+      name: dsh-server-stats
+      # Every field is optional; without `target` the pill shows "Not set up".
+      # These values may also live in ~/.dsh/server-stats.json, which this row overrides.
+      # config:
+      #   target: my-server            # ~/.ssh/config alias or user@host
+      #   identityFile: ~/.ssh/id_ed25519
+      #   port: 22
+      #   services: [nginx, docker]    # systemd units to report
+      #   containers: true
+      #   pollSeconds: 30
+      #   timeoutMs: 8000

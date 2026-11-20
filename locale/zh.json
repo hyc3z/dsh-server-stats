@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "服务器状态",
+    "description": "在输入框统计栏显示远端 Linux 主机的 CPU 与内存占用，点开可看负载、Swap、磁盘、容器数、指定 systemd 单元状态和运行时长。数据由 Host 半通过 SSH 只读采集（/proc、df、podman 或 docker ps），远端不需要安装任何东西，也不发起模型请求。使用前需配置 SSH 目标：在插件设置里填 target（~/.ssh/config 别名或 user@host），或写 ~/.dsh/server-stats.json；未配置时 pill 显示「未配置」。默认每 30 秒轮询一次，窗口重新聚焦时立即刷新；连不上时显示「离线」，不阻塞聊天页。"
+  },
+  "title": "服务器状态",
+  "loading": "正在读取…",
+  "unreachable": "离线",
+  "unconfigured": "未配置",
+  "configure": "还没有配置 SSH 目标：在插件设置里填 target，或写 ~/.dsh/server-stats.json",
+  "host": "主机",
+  "load": "负载",
+  "memory": "内存",
+  "swap": "Swap",
+  "disk": "磁盘",
+  "containers": "容器",
+  "services": "服务",
+  "uptime": "运行时长",
+  "updated": "更新于",
+  "refresh": "刷新",
+  "open": "查看服务器状态",
+  "cpu": "CPU"
+}

@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Server status",
+    "description": "Show a remote Linux host's CPU and memory beside the composer statistics, with load, swap, disk, container count, selected systemd units and uptime in a click-through panel. Values are read by the Host half over SSH with a read-only script (/proc, df, podman or docker ps); nothing is installed on the remote host and no model request is made. Configure an SSH target first — set target in the plugin settings (~/.ssh/config alias or user@host) or write ~/.dsh/server-stats.json; until then the pill reads Not set up. It polls every 30 seconds by default, refreshes when the window regains focus, and shows Offline instead of blocking the page when the host cannot be reached."
+  },
+  "title": "Server status",
+  "loading": "Reading…",
+  "unreachable": "Offline",
+  "unconfigured": "Not set up",
+  "configure": "No SSH target configured: set target in the plugin settings, or write ~/.dsh/server-stats.json",
+  "host": "Host",
+  "load": "Load",
+  "memory": "Memory",
+  "swap": "Swap",
+  "disk": "Disk",
+  "containers": "Containers",
+  "services": "Services",
+  "uptime": "Uptime",
+  "updated": "Updated",
+  "refresh": "Refresh",
+  "open": "Show server status",
+  "cpu": "CPU"
+}
